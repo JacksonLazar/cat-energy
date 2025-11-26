@@ -1,1 +1,9 @@
-@import "./_header.scss";
+@use "./_fonts.scss";
+@use  "./_normalize.scss";
+@forward "./_header.scss";
+@forward "./_hero.scss";
+@forward "./_variables.scss";
+@forward "./_products.scss";
+@forward "./example.scss";
+@forward "./contacts.scss";
+@forward "./footer.scss";

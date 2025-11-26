@@ -1,0 +1,114 @@
+@use "./variables" as v;
+
+// @media (max-width: 320px) {
+.footer {
+  box-sizing: border-box;
+  padding: 34px 0px 40px 20px;
+ }
+
+ .footer__icon-main {
+  padding-left: 75px;
+  width: 128px;
+
+  margin-bottom: 36px;
+ }
+
+ .footer__icon-main:hover {
+  fill: v.$color-footer-logo-hov;
+  text-shadow: 0px 4px v.$color-footer-logo-hov-sh;
+ }
+
+ .footer__icon-main:active{
+  fill: v.$color-footer-logo-activ;
+  text-shadow: 0px 4px v.$color-footer-logo-hov-sh;
+ }
+ 
+ .footer__list {
+  position: relative;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  max-width: 132px;
+  list-style-type: none;
+
+  padding-left: 73px;
+  margin-bottom: 36px;
+ }
+
+ .footer__list::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 42px;
+  left: 0px;
+  width: 280px;
+  height: 2px;
+  background-color: v.$color-line;
+ }
+
+  .footer__list::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: 0px;
+  width: 280px;
+  height: 2px;
+  background-color: v.$color-line;
+ }
+ 
+ .footer__link {
+ text-decoration: none;
+ }
+
+ .footer__networks {
+  fill: v.$color-net;
+  }
+
+ .footer__networks:hover  {
+  fill: v.$color-link-hover;
+  }
+
+  .footer__networks:active {
+  fill: v.$color-link-hover;
+  opacity: 0.25;
+  }
+
+ .footer__item {
+  font-family: v.$font-2;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 0%;
+  color: v.$font-color-description;
+ }
+
+ .footer__item:hover {
+  color: v.$color-title-active;
+  text-shadow: 0px, 2px, 4px, v.$color-title-active;
+ }
+
+ .footer__item:active {
+  color: v.$color-title-active;
+  text-shadow: 0px, 5px, 10px, v.$color-title-active;
+  opacity: 0.25;
+ }
+
+ .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 280px;
+ }
+
+ .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+// }

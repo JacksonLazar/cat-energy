@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Oswald";
-  src: ("FONTS/Oswald/static/Oswald-ExtraLight.ttf") format("ttf");
+  src: 
+    local("Oswald"),
+    url("../FONTS/Oswald/static/Oswald-ExtraLight.woff") format("woff");
   font-style: normal;
   font-weight: 200;
   font-display: swap;
@@ -8,7 +10,9 @@
 
 @font-face {
   font-family: "Oswald";
-  src: ("FONTS/Oswald/static/Oswald-Light.ttf") format("ttf");
+  src: 
+    local("Oswald"), 
+    url("../FONTS/Oswald/static/Oswald-Light.woff") format("woff");
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -16,7 +20,9 @@
 
 @font-face {
   font-family: "Oswald";
-  src: ("FONTS/Oswald/static/Oswald-Regular.ttf.ttf") format("ttf");
+  src: 
+    local("Oswald"),  
+    url("../FONTS/Oswald/static/Oswald-Regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -24,7 +30,9 @@
 
 @font-face {
   font-family: "Oswald";
-  src: ("FONTS/Oswald/static/Oswald-Medium.ttf") format("ttf");
+  src: 
+    local("Oswald"),
+    url("../FONTS/Oswald/static/Oswald-Medium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
   font-display: swap;
@@ -32,7 +40,9 @@
 
 @font-face {
   font-family: "Oswald";
-  src: ("FONTS/Oswald/static/Oswald-SemiBold.ttf") format("ttf");
+  src: l
+    local("Oswald"),
+    url("../FONTS/Oswald/static/Oswald-SemiBold.woff") format("woff");
   font-style: normal;
   font-weight: 600;
   font-display: swap;
@@ -40,8 +50,20 @@
 
 @font-face {
   font-family: "Oswald";
-  src: ("FONTS/Oswald/static/Oswald-Bold.ttf") format("ttf");
+  src: 
+    local("Oswald"),
+    url("../FONTS/Oswald/static/Oswald-Bold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: 
+    local("Lato"),  
+    url("../FONTS/Oswald/static/Lato-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
 }
