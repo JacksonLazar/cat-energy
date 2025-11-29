@@ -11,30 +11,30 @@
 }
 
 .contacts__invite {
-  font-family: v.$font;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  color: v.$font-color-second;
-  text-transform: uppercase;
-  letter-spacing: 0%;
-
   max-width: 140px;
   padding-left: 20px;
+
+  font-family: v.$font;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: v.$font-color-second;
 }
 
 .contacts__addres {
+  max-width: 140px;
+  margin-bottom: 26px;  
+
   font-family: v.$font-2;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.43;
-  color: v.$font-color-description;
   letter-spacing: 0%;
-
-  max-width: 140px;
-  margin-bottom: 26px;
+  color: v.$font-color-description;
 }
 
 .visually-hidden {

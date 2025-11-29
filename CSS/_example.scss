@@ -3,59 +3,60 @@
 
 .example {
   box-sizing: border-box;
-  background-color: v.$color-box;
   max-width: 320px;
   padding: 26px 0px 40px 20px;
+
+  background-color: v.$color-box;
 }
 
 .example__title-main {
+  margin-bottom: 40px;
+
   font-family: v.$font;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
-  color: v.$font-color-second;
   letter-spacing: 0%;
-
-  margin-bottom: 40px;
+  color: v.$font-color-second;
 }
 
 .example__description {
+  max-width: 280px;
+  margin-bottom: 20px;
+
   font-family: v.$font-2;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.3;
   letter-spacing: 0%;
   color: v.$font-color-description;
-
-  max-width: 280px;
-  margin-bottom: 20px;
 }
 
 .example__container {
   display: flex;
-  gap: 32px;
-
   max-width: 280px;
+  gap: 32px;
 }
 
 .example__count {
   position: relative;
+
   box-sizing: border-box;
+  width:  124px;
+  margin-bottom: 22px;
+  padding: 12px 0px;
+
   border: 1px solid v.$color-line;
   border-radius: 3px;
-  text-align: center;
-  width:  124px;
-
-  padding: 12px 0px;
-  margin-bottom: 22px;
+  text-align: center; 
 }
 
 .example__inscription {
   font-family: v.$font;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
   color: v.$font-color-second;
 }
 
@@ -63,39 +64,43 @@
   position: absolute;
   top: 45px;
   left: 21px;
+
+  max-width: 77px;
+
   font-family: v.$font-2;
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
-  font-size: 12px;
   line-height: 1;
   letter-spacing: 0%;
   color: v.$font-color-description;
-
-  max-width: 77px;
 }
 
 .example__title-second {
+  margin-bottom: 20px;
+  padding-left: 47px;
+
   font-family: v.$font;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   text-transform: uppercase;
   color: v.$font-color-second;
-  padding-left: 47px;
-  margin-bottom: 20px;
 }
 
 .example__slider-box {
   position: relative;
+  
   display: flex;
   max-width: 280px;
 }
 
 .example__slider {
   position: absolute;
-  display: block;
   top: 0px;
   left: 43%;
+  
+  display: block;
   width: 40px;
   height: 280px;
 }

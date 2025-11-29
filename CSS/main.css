@@ -372,16 +372,16 @@ ul {
 
 .header {
   box-sizing: border-box;
-  padding-top: 4%;
   max-width: 320px;
+  padding-top: 4%;
 }
 
 .header__container {
   display: flex;
+  max-width: 280px;
+  margin: 0 auto 10px;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto 10px;
-  max-width: 280px;
 }
 
 .visually-hidden {
@@ -397,60 +397,60 @@ ul {
 
 .hero {
   position: relative;
+  z-index: 0;
   box-sizing: border-box;
-  background: image-set(url("../IMAGES/mobile/cat.png") type("image/png") 1x, url("../IMAGES/mobile/cat 2x.png") type("image/png") 2x, url("../IMAGES/mobile/cat.webp") type("image/webp") 1x, url("../IMAGES/mobile/cat 2x.webp") type("image/webp") 2x);
-  background-repeat: no-repeat;
-  object-fit: cover;
-  padding-top: 27px;
-  padding-left: 3.2%;
   max-width: 320px;
   margin: 0px, auto, 25px;
-  z-index: 0;
+  padding-top: 27px;
+  padding-left: 3.2%;
+  background: image-set(url("../IMAGES/mobile/cat.png") type("image/png") 1x, url("../IMAGES/mobile/cat-2x.png") type("image/png") 2x, url("../IMAGES/mobile/cat.webp") type("image/webp") 1x, url("../IMAGES/mobile/cat-2x.webp") type("image/webp") 2x);
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 .hero::after {
   content: "";
   position: absolute;
-  display: block;
   top: 0%;
   left: 0%;
+  z-index: -1;
+  display: block;
   width: 100%;
   height: 302px;
-  background: image-set(url("../IMAGES/mobile/Rectangle 18.png") type("image/png") 1x, url("../IMAGES/mobile/Rectangle 18 2x.png") type("image/png") 2x, url("../IMAGES/mobile/Rectangle-18.webp") type("image/webp") 1x, url("../IMAGES/mobile/Rectangle-18-2x.webp") type("image/webp") 2x);
-  z-index: -1;
+  background: image-set(url("../IMAGES/mobile/Rectangle.png") type("image/png") 1x, url("../IMAGES/mobile/Rectangle-2x.png") type("image/png") 2x, url("../IMAGES/mobile/Rectangle.webp") type("image/webp") 1x, url("../IMAGES/mobile/Rectangle-2x.webp") type("image/webp") 2x);
 }
 
 .hero__h1 {
+  max-width: 249px;
+  margin-bottom: 25px;
+  padding-left: 4.2%;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
   line-height: 1;
   letter-spacing: 0%;
   color: rgb(255, 255, 255);
   text-align: center;
-  max-width: 249px;
-  padding-left: 4.2%;
-  margin-bottom: 25px;
 }
 
 .hero__title {
+  max-width: 198px;
+  margin: 0px 0px 29px;
+  padding-left: 12.8%;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  text-align: center;
   letter-spacing: 0%;
-  max-width: 198px;
-  padding-left: 12.8%;
-  margin: 0px 0px 29px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .hero__picture {
-  padding-left: 6, 2%;
   margin-bottom: 2px;
+  padding-left: 6, 2%;
 }
 
 .visually-hidden {
@@ -470,18 +470,18 @@ ul {
 }
 
 .products__button {
+  width: 280px;
+  margin-bottom: 20px;
+  padding: 10px 44px;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
-  width: 280px;
   background-color: rgb(104, 183, 56);
-  padding: 10px 44px;
-  margin-bottom: 20px;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 }
 
 .products__button:hover {
@@ -497,63 +497,62 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  list-style-type: none;
   margin-bottom: 18px;
+  list-style-type: none;
 }
 
 .products__container {
   box-sizing: border-box;
   max-width: 280px;
+  padding: 0px 0px 25px 20px;
   background-color: rgb(242, 242, 242);
-  padding-left: 20px;
-  padding-bottom: 25px;
 }
 
 .products__flex {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-top: 21px;
   margin-bottom: 18px;
+  padding-top: 21px;
+  gap: 20px;
+  align-items: center;
 }
 
 .products__title {
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
+  text-transform: uppercase;
   letter-spacing: 0%;
   color: rgb(0, 0, 0);
-  text-transform: uppercase;
 }
 
 .products__description {
+  max-width: 227px;
+  margin-bottom: 43px;
   font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.3;
   letter-spacing: 0%;
   color: rgb(34, 34, 34);
-  max-width: 227px;
-  margin-bottom: 43px;
 }
 
 .products__box {
   position: relative;
   display: flex;
+  max-width: 139px;
   gap: 15px;
   justify-content: space-between;
   align-items: center;
-  max-width: 139px;
 }
 
 .products__box::after {
   content: "";
   position: absolute;
-  display: block;
   top: -15px;
   left: 0px;
+  display: block;
   width: 240px;
   height: 1px;
   background-color: rgb(217, 217, 217);
@@ -562,48 +561,48 @@ ul {
 .products__magazin {
   position: relative;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   line-height: 1;
   letter-spacing: 0%;
-  color: rgb(0, 0, 0);
   text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }
 
 .products__title-second {
+  margin-bottom: 37px;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
   letter-spacing: 0%;
   color: rgb(0, 0, 0);
-  margin-bottom: 37px;
 }
 
 .products__list-second {
   display: flex;
+  margin-bottom: 49px;
   flex-direction: column;
   gap: 20px;
   list-style-type: none;
-  margin-bottom: 49px;
 }
 
 .products__item-second {
   display: flex;
-  align-items: center;
   gap: 20px;
+  align-items: center;
 }
 
 .products__description-second {
+  max-width: 200px;
   font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.3;
   letter-spacing: 0%;
   color: rgb(34, 34, 34);
-  max-width: 200px;
 }
 
 .visually-hidden {
@@ -619,55 +618,55 @@ ul {
 
 .example {
   box-sizing: border-box;
-  background-color: rgb(242, 242, 242);
   max-width: 320px;
   padding: 26px 0px 40px 20px;
+  background-color: rgb(242, 242, 242);
 }
 
 .example__title-main {
+  margin-bottom: 40px;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
-  font-size: 36px;
-  color: rgb(0, 0, 0);
   letter-spacing: 0%;
-  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
 }
 
 .example__description {
+  max-width: 280px;
+  margin-bottom: 20px;
   font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   line-height: 1.3;
   letter-spacing: 0%;
   color: rgb(34, 34, 34);
-  max-width: 280px;
-  margin-bottom: 20px;
 }
 
 .example__container {
   display: flex;
-  gap: 32px;
   max-width: 280px;
+  gap: 32px;
 }
 
 .example__count {
   position: relative;
   box-sizing: border-box;
+  width: 124px;
+  margin-bottom: 22px;
+  padding: 12px 0px;
   border: 1px solid rgb(217, 217, 217);
   border-radius: 3px;
   text-align: center;
-  width: 124px;
-  padding: 12px 0px;
-  margin-bottom: 22px;
 }
 
 .example__inscription {
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  font-size: 24px;
   color: rgb(0, 0, 0);
 }
 
@@ -675,25 +674,25 @@ ul {
   position: absolute;
   top: 45px;
   left: 21px;
+  max-width: 77px;
   font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 12px;
   font-weight: 400;
   font-style: normal;
-  font-size: 12px;
   line-height: 1;
   letter-spacing: 0%;
   color: rgb(34, 34, 34);
-  max-width: 77px;
 }
 
 .example__title-second {
+  margin-bottom: 20px;
+  padding-left: 47px;
   font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
-  padding-left: 47px;
-  margin-bottom: 20px;
 }
 
 .example__slider-box {
@@ -704,9 +703,9 @@ ul {
 
 .example__slider {
   position: absolute;
-  display: block;
   top: 0px;
   left: 43%;
+  display: block;
   width: 40px;
   height: 280px;
 }
@@ -732,28 +731,28 @@ ul {
 }
 
 .contacts__invite {
-  font-family: Oswald, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  letter-spacing: 0%;
   max-width: 140px;
   padding-left: 20px;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }
 
 .contacts__addres {
-  font-family: Lato, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.43;
-  color: rgb(34, 34, 34);
-  letter-spacing: 0%;
   max-width: 140px;
   margin-bottom: 26px;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0%;
+  color: rgb(34, 34, 34);
 }
 
 .visually-hidden {
@@ -773,9 +772,9 @@ ul {
 }
 
 .footer__icon-main {
-  padding-left: 75px;
   width: 128px;
   margin-bottom: 36px;
+  padding-left: 75px;
 }
 
 .footer__icon-main:hover {
@@ -791,12 +790,12 @@ ul {
 .footer__list {
   position: relative;
   display: flex;
+  max-width: 132px;
+  margin-bottom: 36px;
+  padding-left: 73px;
   gap: 24px;
   justify-content: space-between;
-  max-width: 132px;
   list-style-type: none;
-  padding-left: 73px;
-  margin-bottom: 36px;
 }
 
 .footer__list::after {
@@ -813,9 +812,9 @@ ul {
 .footer__list::before {
   content: "";
   position: absolute;
-  display: block;
   top: -20px;
   left: 0px;
+  display: block;
   width: 280px;
   height: 2px;
   background-color: rgb(217, 217, 217);
@@ -840,9 +839,9 @@ ul {
 
 .footer__item {
   font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
   letter-spacing: 0%;
   color: rgb(34, 34, 34);
 }
@@ -860,9 +859,9 @@ ul {
 
 .footer__container {
   display: flex;
+  max-width: 280px;
   justify-content: space-between;
   align-items: center;
-  max-width: 280px;
 }
 
 .visually-hidden {

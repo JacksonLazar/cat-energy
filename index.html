@@ -36,18 +36,19 @@
     <h1 class="hero__h1">Функциональное питание для котов</h1>
     <p class="hero__title">Занялся собой? Займись котом!</p>
     <picture class="hero__picture">
-      <source srcset="IMAGES/mobile/index-can-mobile 1.png 1x, IMAGES/mobile/index-can-mobile 1 2x.png 2x"
-        loading="lazy" type="image/png" media="(max-width: 320x)">
-      <source srcset="IMAGES/mobile/index-can-mobile-1.webp 1x, IMAGES/mobile/index-can-mobile-1-2x.webp 2x"
+      <source srcset="IMAGES/mobile/index-can-mobile.png 1x, IMAGES/mobile/index-can-mobile-2x.png 2x"
+        loading="lazy" type="image/png" media="(max-width: 320px)">
+      <source srcset="IMAGES/mobile/index-can-mobile.webp 1x, IMAGES/mobile/index-can-mobile-2x.webp 2x"
         loading="lazy" type="image/webp" media="(max-width: 320px)">
-      <img src="IMAGES/mobile/index-can-mobile 1.png" loading="lazy" alt="Главная банка">
+      <img src="IMAGES/mobile/index-can-mobile.png" loading="lazy" alt="Фотография основного продукта">
     </picture>
   </section>
 
   <section class="products">
     <button class="products__button" type="button">подобрать программу</button>
+    <span class="visually-hidden">Кнопка для выбора продукта</span>
     <ul class="products__list">
-      <li class="poducrs__item">
+      <li class="products__item">
         <div class="products__container">
           <div class="products__flex">
             <svg class="products__icon" width="50" height="53" viewBox="0 0 50 53">
@@ -62,10 +63,11 @@
             <svg class="products__icon" width="32" height="11" viewBox="0 0 32 11">
               <use href="sprite.svg#arrow"></use>
             </svg>
+            <span class="visually-hidden">Сылка на каталог для похудения</span>
           </div>
         </div>
       </li>
-      <li class="poducrs__item">
+      <li class="products__item">
         <div class="products__container">
           <div class="products__flex">
             <svg class="products__icon" width="67" height="50" viewBox="0 0 67 50">
@@ -80,6 +82,7 @@
             <svg class="products__icon" width="32" height="11" viewBox="0 0 32 11">
               <use href="sprite.svg#arrow"></use>
             </svg>
+            <span class="visually-hidden">Сылка на каталог для набора массы</span>
           </div>
         </div>
       </li>
@@ -134,30 +137,30 @@
     <div class="example__slider-box">
       <picture class="example__slider-box-before">
         <source srcset="IMAGES/mobile/cat-befor-mob-1x.png 1x, IMAGES/mobile/cat-befor-mob-2x.png 2x" loading="lazy"
-          type="image/png" media="(max-width: 320x)">
+          type="image/png" media="(max-width: 320px)">
         <source srcset="IMAGES/mobile/cat-befor-mob-1x.webp 1x, IMAGES/mobile/cat-befor-mob-2x.webp 2x" loading="lazy"
           type="image/webp" media="(max-width: 320px)">
         <img src="IMAGES/mobile/cat-befor-mob-1x.png" loading="lazy"
-          alt="пример вашего любимого питомца до использования нашего питания">
+          alt="Пример вашего любимого питомца до использования нашего питания">
       </picture>
-      <span class="visually-hidden">пример вашего любимого питомца до использования нашего питания</span>
+      <span class="visually-hidden">Пример вашего любимого питомца до использования нашего питания</span>
       <picture class="example__slider">
         <source srcset="IMAGES/mobile/slider-1x.png 1x, IMAGES/mobile/slider-2x.png 2x" loading="lazy" type="image/png"
-          media="(max-width: 320x)">
+          media="(max-width: 320px)">
         <source srcset="IMAGES/mobile/slider-1x.webp 1x, IMAGES/mobile/slider-2x.webp 2x" loading="lazy"
           type="image/webp" media="(max-width: 320px)">
-        <img src="IMAGES/mobile/slider-1x.png" loading="lazy" alt="слайдер для перемещения позиции до или после">
+        <img src="IMAGES/mobile/slider-1x.png" loading="lazy" alt="Слайдер для перемещения позиции до или после">
       </picture>
-      <span class="visually-hidden">слайдер для перемещения позиции до или после</span>
+      <span class="visually-hidden">Слайдер для перемещения позиции до или после</span>
       <picture class="example__slider-box-after">
         <source srcset="IMAGES/mobile/cat-after-mob-1x.png 1x, IMAGES/mobile/cat-after-mob-2x.png 2x" loading="lazy"
-          type="image/png" media="(max-width: 320x)">
+          type="image/png" media="(max-width: 320px)">
         <source srcset="IMAGES/mobile/cat-after-mob-1x.webp 2x, IMAGES/mobile/cat-after-mob-2x.webp 2x" loading="lazy"
           type="image/webp" media="(max-width: 320px)">
         <img src="IMAGES/mobile/cat-after-mob-1x.png" loading="lazy"
-          alt="пример вашего любимого питомца после использования нашего питания">
+          alt="Пример вашего любимого питомца после использования нашего питания">
       </picture>
-      <span class="visually-hidden">пример вашего любимого питомца после использования нашего питания</span>
+      <span class="visually-hidden">Пример вашего любимого питомца после использования нашего питания</span>
     </div>
   </section>
 
@@ -165,7 +168,7 @@
     <div class="contacts__container">
       <p class="contacts__invite">приглашаем к сотрудничеству дилеров!</p>
       <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербур</p>
-      <span class="visually-hidden">наш адрес</span>
+      <span class="visually-hidden">Наш фактический адрес ул. Большая Конюшенная, д. 19/8 Санкт-Петербур</span>
       </a>
     </div>
     <div class="contacts__map">
@@ -173,6 +176,7 @@
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A9954fe5d3b4680acd0a9d1e86ddaf1caaab4d592ce2e37576bee3551491fd26a&amp;source=constructor"
         width="320" height="362" frameborder="0"></iframe>
     </div>
+    <span class="visually-hidden">Интерактивная карта с нашим местонахождением</span>
   </section>
 
   <section class="footer">
@@ -180,7 +184,7 @@
       <svg class="footer__icon-main" width="128" height="24" viewBox="0 0 128 24">
         <use href="sprite.svg#footer-logo"></use>
       </svg>
-      <span class="visually-hidden">сылка на официальную страницу сайта cat energy</span>
+      <span class="visually-hidden">Сылка на официальную страницу сайта cat energy</span>
     </a>
     <ul class="footer__list">
       <li class="footer__item">
@@ -188,7 +192,7 @@
           <svg class="footer__networks" width="28" height="22" viewBox="0 0 28 22">
             <use href="sprite.svg#VK"></use>
           </svg>
-          <span class="visually-hidden">сылка на нашу страницу вконтакте</span>
+          <span class="visually-hidden">Сылка на нашу страницу вконтакте</span>
         </a>
       </li>
       <li class="footer__item">
@@ -196,7 +200,7 @@
           <svg class="footer__networks" width="28" height="22" viewBox="0 0 28 22">
             <use href="sprite.svg#YT"></use>
           </svg>
-          <span class="visually-hidden">сылка на нашу страницу в ютуб канале</span>
+          <span class="visually-hidden">Сылка на нашу страницу в ютуб канале</span>
         </a>
       </li>
       <li class="footer__item">
@@ -204,20 +208,20 @@
           <svg class="footer__networks" width="28" height="22" viewBox="0 0 28 22">
             <use href="sprite.svg#Telega"></use>
           </svg>
-          <span class="visually-hidden">сылка на наш телеграмм канал</span>
+          <span class="visually-hidden">Сылка на наш телеграмм канал</span>
         </a>
       </li>
     </ul>
     <div class="footer__container">
       <a href="#" class="footer__link">
         <span class="footer__item">HTML Academy</span>
-        <span class="visually-hidden">ссылка на HTML Academy</span>
+        <span class="visually-hidden">Ссылка на HTML Academy</span>
       </a>
       <a href="#" class="footer__link">
         <svg class="footer__networks" width="27" height="34" viewBox="0 0 27 34">
           <use href="sprite.svg#HTML Academy"></use>
         </svg>
-        <span class="visually-hidden">логотип HTML Academy</span>
+        <span class="visually-hidden">Логотип HTML Academy</span>
       </a>
     </div>
   </section>
